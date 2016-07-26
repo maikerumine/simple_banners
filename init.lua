@@ -102,7 +102,7 @@ minetest.register_node("simple_banners:cross_top_" .. clrs[i][1], {
 		drawtype = "nodebox",
 	--tiles = {"wool_white.png^(default_apple.png)^[colorize:" .. clrs[i][3]},
 	--tiles = {"wool_white.png^banners_cross.png^[makealpha:255,255,255^[colorize:" .. clrs[i][3]},
-	tiles = {"wool_white.png^banners_cross.png^[colorize:" .. clrs[i][3]},
+	tiles = {"banners_cross.png^[colorize:" .. clrs[i][3]},
 	inventory_image =  {"banners_cross.png^[colorize:" .. clrs[i][3]},
 	wield_image = {"banners_cross.png^[colorize:" .. clrs[i][3]},
 		paramtype = "light",
