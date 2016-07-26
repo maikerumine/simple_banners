@@ -597,8 +597,8 @@ minetest.register_node("simple_banners:test_top_" .. clrs[i][1], {
 		sounds = default.node_sound_wood_defaults(),
 	on_punch = function(pos, node, puncher)
 
-		--node.name = "simple_banners:test2_top_black"
-		node.name = "simple_banners:test2_top_" .. clrs[i][1],
+		node.name = "simple_banners:test2_top_black"
+		--node.name = "simple_banners:test2_top_" .. clrs[i][1],
 		minetest.swap_node(pos, node)
 	end,
 	on_rightclick = function(pos, node, player, itemstack, pointed_thing)
@@ -633,8 +633,8 @@ minetest.register_node("simple_banners:test2_top_" .. clrs[i][1], {
 		groups = {snappy = 2, choppy = 2, oddly_breakable_by_hand = 3, flammable = 3},
 		sounds = default.node_sound_wood_defaults(),
 	on_punch = function(pos, node, puncher)
-		--node.name = "simple_banners:test_top_black"  --this code works
-		node.name = "simple_banners:test_top_" .. clrs[i][1],  --this code don't work
+		node.name = "simple_banners:test_top_black"  --this code works
+		--node.name = "simple_banners:test_top_" .. clrs[i][1],  --this code don't work
 		minetest.swap_node(pos, node)
 	end,
 	on_rightclick = function(pos, node, player, itemstack, pointed_thing)
